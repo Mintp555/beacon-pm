@@ -411,10 +411,10 @@ p { margin: 0; }
 }
 .about-portrait img {
   width: 100%;
-  height: 500px;
+  height: 440px;
   display: block;
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: 50% 30%;
   position: relative;
 }
 
@@ -528,6 +528,106 @@ p { margin: 0; }
   line-height: 1.15;
   max-width: 26ch;
   margin: 0 auto;
+}
+.statement__text--wide { max-width: 28ch; }
+
+/* ===== Home: why project management ===== */
+.problem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.problem__headline {
+  font-size: 36px;
+  line-height: 1.2;
+}
+.problem__body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  padding-top: 34px;
+}
+
+/* ===== Home: process steps ===== */
+.process { position: relative; }
+.process__line {
+  position: absolute;
+  top: 21px;
+  left: calc(12.5% + 21px);
+  right: calc(12.5% + 21px);
+  height: 1px;
+  background: linear-gradient(90deg, rgba(191,160,101,.6), rgba(191,160,101,.25), rgba(191,160,101,.6));
+}
+.process__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+}
+.process__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 0 20px;
+}
+.process__num {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 19px;
+  color: var(--gold);
+}
+.process__num--final {
+  border: none;
+  background: linear-gradient(135deg, var(--gold-light), #b08c50);
+  color: var(--bg);
+  font-weight: 600;
+}
+.process__title {
+  font-family: var(--serif);
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+.process__desc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 26ch;
+}
+
+/* ===== Home: USP columns ===== */
+.usps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.usp {
+  padding: 4px 28px;
+  border-right: 1px solid rgba(191,160,101,.2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.usp:first-child { padding-left: 0; }
+.usp:last-child { padding-right: 0; border-right: none; }
+.usp__title {
+  font-family: var(--serif);
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+.usp__desc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
 }
 
 /* ===== Services: core areas / working approach ===== */
@@ -678,9 +778,17 @@ p { margin: 0; }
   .why-carf__intro,
   .service-block__grid,
   .approach-block__grid,
-  .credentials-quote {
+  .credentials-quote,
+  .problem {
     grid-template-columns: 1fr;
   }
+  .problem__body { padding-top: 0; }
+  .process__grid { grid-template-columns: 1fr 1fr; gap: 40px 0; }
+  .process__line { display: none; }
+  .usps { grid-template-columns: 1fr 1fr; gap: 32px 0; }
+  .usp { padding: 4px 24px; }
+  .usp:nth-child(2n) { border-right: none; padding-right: 0; }
+  .usp:nth-child(2n+1) { padding-left: 0; }
   .about-header { padding-bottom: 32px; }
   .about-portrait img { height: 360px; }
   .credentials { border-right: none; border-bottom: 1px solid var(--border); }
