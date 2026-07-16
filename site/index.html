@@ -20,21 +20,99 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Beacon PM",
-  "url": "https://thebeaconpm.com/",
-  "description": "Project management consultancy for healthcare quality improvement, CARF accreditation implementation, and cross-functional delivery.",
-  "founder": {
-    "@type": "Person",
-    "name": "Patsiri",
-    "url": "https://thebeaconpm.com/about.html",
-    "sameAs": ["https://www.linkedin.com/in/patsiripiansabai/"]
-  },
-  "areaServed": ["Asia"],
-  "serviceType": [
-    "CARF accreditation readiness review",
-    "Project management for CARF implementation",
-    "Healthcare quality improvement"
+  "@graph": [
+    {
+      "@type": "ImageObject",
+      "@id": "https://thebeaconpm.com/#logo",
+      "url": "https://thebeaconpm.com/android-chrome-512x512.png",
+      "contentUrl": "https://thebeaconpm.com/android-chrome-512x512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "Beacon PM"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://thebeaconpm.com/#organization",
+      "name": "Beacon PM",
+      "url": "https://thebeaconpm.com/",
+      "logo": {
+        "@id": "https://thebeaconpm.com/#logo"
+      },
+      "image": {
+        "@id": "https://thebeaconpm.com/#logo"
+      },
+      "description": "Independent project management for healthcare quality improvement and CARF accreditation implementation across Asia.",
+      "email": "psbpatsiri@gmail.com",
+      "telephone": "+66-82-835-5155",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangkok",
+        "addressCountry": "TH"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "knowsAbout": [
+        "CARF accreditation",
+        "Healthcare quality improvement",
+        "Project management",
+        "Business analysis",
+        "Accreditation readiness"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "psbpatsiri@gmail.com",
+        "telephone": "+66-82-835-5155",
+        "areaServed": "Asia",
+        "availableLanguage": "English"
+      },
+      "founder": {
+        "@id": "https://thebeaconpm.com/#patsiri"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patsiripiansabai/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thebeaconpm.com/#website",
+      "url": "https://thebeaconpm.com/",
+      "name": "Beacon PM",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://thebeaconpm.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://thebeaconpm.com/#patsiri",
+      "name": "Patsiri",
+      "url": "https://thebeaconpm.com/about/",
+      "jobTitle": "Project Manager",
+      "worksFor": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patsiripiansabai/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://thebeaconpm.com/#webpage",
+      "url": "https://thebeaconpm.com/",
+      "name": "Beacon PM — Project Management for Healthcare Quality Improvement",
+      "description": "Structured project management for CARF accreditation and healthcare quality improvement in Asia.",
+      "isPartOf": {
+        "@id": "https://thebeaconpm.com/#website"
+      },
+      "about": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "primaryImageOfPage": "https://thebeaconpm.com/images/consultation.png",
+      "inLanguage": "en"
+    }
   ]
 }
 </script>

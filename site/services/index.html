@@ -20,18 +20,164 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Beacon PM Services",
-  "url": "https://thebeaconpm.com/services/",
-  "description": "Project management services for CARF accreditation readiness, implementation planning, governance, and healthcare quality improvement.",
-  "provider": {
-    "@type": "Person",
-    "name": "Patsiri"
-  },
-  "serviceType": [
-    "CARF readiness review",
-    "Implementation project management",
-    "General project management"
+  "@graph": [
+    {
+      "@type": "ImageObject",
+      "@id": "https://thebeaconpm.com/#logo",
+      "url": "https://thebeaconpm.com/android-chrome-512x512.png",
+      "contentUrl": "https://thebeaconpm.com/android-chrome-512x512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "Beacon PM"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://thebeaconpm.com/#organization",
+      "name": "Beacon PM",
+      "url": "https://thebeaconpm.com/",
+      "logo": {
+        "@id": "https://thebeaconpm.com/#logo"
+      },
+      "image": {
+        "@id": "https://thebeaconpm.com/#logo"
+      },
+      "description": "Independent project management for healthcare quality improvement and CARF accreditation implementation across Asia.",
+      "email": "psbpatsiri@gmail.com",
+      "telephone": "+66-82-835-5155",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangkok",
+        "addressCountry": "TH"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "knowsAbout": [
+        "CARF accreditation",
+        "Healthcare quality improvement",
+        "Project management",
+        "Business analysis",
+        "Accreditation readiness"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "psbpatsiri@gmail.com",
+        "telephone": "+66-82-835-5155",
+        "areaServed": "Asia",
+        "availableLanguage": "English"
+      },
+      "founder": {
+        "@id": "https://thebeaconpm.com/#patsiri"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patsiripiansabai/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thebeaconpm.com/#website",
+      "url": "https://thebeaconpm.com/",
+      "name": "Beacon PM",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://thebeaconpm.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://thebeaconpm.com/#patsiri",
+      "name": "Patsiri",
+      "url": "https://thebeaconpm.com/about/",
+      "jobTitle": "Project Manager",
+      "worksFor": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patsiripiansabai/"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://thebeaconpm.com/services/#webpage",
+      "url": "https://thebeaconpm.com/services/",
+      "name": "Services — Beacon PM",
+      "isPartOf": {
+        "@id": "https://thebeaconpm.com/#website"
+      },
+      "about": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Service",
+      "name": "CARF Readiness Review",
+      "provider": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "description": "A focused assessment of where the organisation stands against CARF standards — identifying gaps, risks, and priorities before committing to full implementation.",
+      "serviceType": "Accreditation readiness assessment"
+    },
+    {
+      "@type": "Service",
+      "name": "Project Management for CARF Implementation",
+      "provider": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "description": "End-to-end project management of the accreditation implementation — coordinating departments, tracking documentation, and driving measurable progress toward survey readiness.",
+      "serviceType": "Accreditation implementation project management"
+    },
+    {
+      "@type": "Service",
+      "name": "General Project Management",
+      "provider": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "description": "Planning, portfolio coordination, budget control, risk management, and go-live coordination for complex, multi-stakeholder projects."
+    },
+    {
+      "@type": "Service",
+      "name": "E-commerce & Web Delivery",
+      "provider": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "description": "End-to-end delivery of e-commerce sites, portals, and integrations across development, UX/UI, automation, and QA from requirements through UAT to launch."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thebeaconpm.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://thebeaconpm.com/services/"
+        }
+      ]
+    }
   ]
 }
 </script>

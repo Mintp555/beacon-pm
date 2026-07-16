@@ -20,16 +20,115 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Beacon PM",
-  "url": "https://thebeaconpm.com/contact/",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "psbpatsiri@gmail.com",
-    "telephone": "+66828355155",
-    "contactType": "customer service"
-  },
-  "sameAs": ["https://www.linkedin.com/in/patsiripiansabai/"]
+  "@graph": [
+    {
+      "@type": "ImageObject",
+      "@id": "https://thebeaconpm.com/#logo",
+      "url": "https://thebeaconpm.com/android-chrome-512x512.png",
+      "contentUrl": "https://thebeaconpm.com/android-chrome-512x512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "Beacon PM"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://thebeaconpm.com/#organization",
+      "name": "Beacon PM",
+      "url": "https://thebeaconpm.com/",
+      "logo": {
+        "@id": "https://thebeaconpm.com/#logo"
+      },
+      "image": {
+        "@id": "https://thebeaconpm.com/#logo"
+      },
+      "description": "Independent project management for healthcare quality improvement and CARF accreditation implementation across Asia.",
+      "email": "psbpatsiri@gmail.com",
+      "telephone": "+66-82-835-5155",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangkok",
+        "addressCountry": "TH"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Asia"
+      },
+      "knowsAbout": [
+        "CARF accreditation",
+        "Healthcare quality improvement",
+        "Project management",
+        "Business analysis",
+        "Accreditation readiness"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "psbpatsiri@gmail.com",
+        "telephone": "+66-82-835-5155",
+        "areaServed": "Asia",
+        "availableLanguage": "English"
+      },
+      "founder": {
+        "@id": "https://thebeaconpm.com/#patsiri"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patsiripiansabai/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thebeaconpm.com/#website",
+      "url": "https://thebeaconpm.com/",
+      "name": "Beacon PM",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://thebeaconpm.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://thebeaconpm.com/#patsiri",
+      "name": "Patsiri",
+      "url": "https://thebeaconpm.com/about/",
+      "jobTitle": "Project Manager",
+      "worksFor": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/patsiripiansabai/"
+      ]
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://thebeaconpm.com/contact/#webpage",
+      "url": "https://thebeaconpm.com/contact/",
+      "name": "Contact — Beacon PM",
+      "isPartOf": {
+        "@id": "https://thebeaconpm.com/#website"
+      },
+      "about": {
+        "@id": "https://thebeaconpm.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thebeaconpm.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://thebeaconpm.com/contact/"
+        }
+      ]
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
