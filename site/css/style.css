@@ -226,6 +226,37 @@ p { margin: 0; }
 }
 .hero__actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
+/* ===== Home: founder bio ===== */
+.founder {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 72px;
+  align-items: center;
+  padding: 64px var(--gutter);
+  border-bottom: 1px solid var(--border);
+}
+.founder__photo {
+  border: 1px solid rgba(191, 160, 101, .22);
+  background: var(--cream);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.founder__photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+.founder__body { display: flex; flex-direction: column; gap: 18px; }
+.founder__name-row { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.founder__name { font-size: 40px; line-height: 1.1; }
+.founder__role { font-size: 13px; letter-spacing: .05em; color: var(--gold); }
+.founder__lead { font-size: 15.5px; line-height: 1.72; color: var(--text-body); margin: 0; max-width: 62ch; }
+.founder__lead--muted { color: var(--text-muted); }
+.founder__links { display: flex; gap: 20px; align-items: center; margin-top: 6px; }
+.founder__linkedin { font-size: 13px; color: var(--text-muted); }
+
 /* ===== Home: stats ticker ===== */
 .ticker {
   display: grid;
@@ -783,9 +814,13 @@ p { margin: 0; }
   .service-block__grid,
   .approach-block__grid,
   .credentials-quote,
-  .problem {
+  .problem,
+  .founder {
     grid-template-columns: 1fr;
   }
+  .founder { gap: 32px; }
+  .founder__photo { max-width: 360px; }
+  .founder__name { font-size: 32px; }
   .problem__body { padding-top: 0; }
   .process__grid { grid-template-columns: 1fr 1fr; gap: 40px 0; }
   .process__line { display: none; }
