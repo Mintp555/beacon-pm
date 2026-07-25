@@ -47,12 +47,19 @@
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bangkok",
+        "addressRegion": "Bangkok",
         "addressCountry": "TH"
       },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Asia"
-      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Thailand"
+        },
+        {
+          "@type": "Place",
+          "name": "Asia"
+        }
+      ],
       "knowsAbout": [
         "CARF accreditation",
         "Healthcare quality improvement",
@@ -73,7 +80,24 @@
       },
       "sameAs": [
         "https://www.linkedin.com/in/patsiripiansabai/"
-      ]
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.7563,
+        "longitude": 100.5018
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
     },
     {
       "@type": "WebSite",
@@ -96,7 +120,16 @@
       },
       "sameAs": [
         "https://www.linkedin.com/in/patsiripiansabai/"
-      ]
+      ],
+      "workLocation": {
+        "@type": "Place",
+        "name": "Bangkok, Thailand"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangkok",
+        "addressCountry": "TH"
+      }
     },
     {
       "@type": "CollectionPage",
