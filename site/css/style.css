@@ -247,7 +247,7 @@ p { margin: 0; }
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 50% 18%;
+  object-position: 50% 30%;
 }
 .founder__body { display: flex; flex-direction: column; gap: 18px; }
 .founder__name-row { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
