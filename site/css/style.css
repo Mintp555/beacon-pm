@@ -229,9 +229,10 @@ p { margin: 0; }
 /* ===== Home: founder bio ===== */
 .founder {
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 380px minmax(0, 620px);
   gap: 72px;
   align-items: center;
+  justify-content: center;
   padding: 64px var(--gutter);
   border-bottom: 1px solid var(--border);
 }
