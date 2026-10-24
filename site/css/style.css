@@ -865,3 +865,29 @@ p { margin: 0; }
   }
   .service-block__title { font-size: 32px; }
 }
+
+/* ===== Larger, clearer body text ===== */
+.hero__lede { font-size: 18px; line-height: 1.75; }
+.founder__lead { font-size: 17px; line-height: 1.75; }
+.founder__role { font-size: 13.5px; }
+.about-header__copy p { font-size: 17.5px; line-height: 1.8; }
+.case-study__copy p { font-size: 16px; line-height: 1.75; }
+.problem__body { font-size: 16.5px; line-height: 1.75; }
+.why-carf__intro p { font-size: 16.5px; line-height: 1.75; }
+.why-carf__caption { font-size: 14.5px; }
+.service-block__desc { font-size: 17px; line-height: 1.75; }
+.who-card { font-size: 16px; line-height: 1.65; }
+.checklist li { font-size: 16px; }
+.process__desc { font-size: 14.5px; line-height: 1.7; }
+.usp__desc { font-size: 14.5px; line-height: 1.7; }
+.service-row__desc { font-size: 14.5px; }
+.experience-row__desc { font-size: 15.5px; line-height: 1.7; }
+.credentials__list { font-size: 15.5px; }
+.contact-header__lede { font-size: 17.5px; line-height: 1.75; }
+.contact-card__desc { font-size: 15px; }
+.next-step__desc { font-size: 15.5px; line-height: 1.7; }
+.offer-section__hint { font-size: 14px; }
+.offer-card__desc { font-size: 14.5px; line-height: 1.65; }
+.offer-card--wide .offer-card__desc { font-size: 15px; line-height: 1.7; }
+.tag { font-size: 14px; }
+.disclaimer p { font-size: 12px; }
