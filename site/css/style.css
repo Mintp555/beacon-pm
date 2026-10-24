@@ -287,11 +287,14 @@ p { margin: 0; }
 }
 .case-study__copy {
   padding: 64px var(--gutter);
+  text-align: center;
 }
 .case-study__headline {
   font-size: 38px;
   line-height: 1.2;
   max-width: 24ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 .case-study__meta {
   font-size: 13px;
@@ -868,7 +871,7 @@ p { margin: 0; }
 .founder__lead { font-size: 17px; line-height: 1.75; }
 .founder__role { font-size: 13.5px; }
 .about-header__copy p { font-size: 17.5px; line-height: 1.8; }
-.case-study__copy p { font-size: 16px; line-height: 1.75; max-width: 80ch; }
+.case-study__copy p { font-size: 16px; line-height: 1.75; max-width: 80ch; margin-inline: auto; }
 .problem__body { font-size: 16.5px; line-height: 1.75; }
 .why-carf__intro p { font-size: 16.5px; line-height: 1.75; }
 .why-carf__caption { font-size: 14.5px; }
